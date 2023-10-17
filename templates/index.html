@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="">
+<head>
+<title>BigDeal</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="../static/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('../static/images/demo/backgrounds/bg3.jpeg');"> 
+  <!-- ################################################################################################ -->
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+      <div id="logo" class="fl_left">
+        <h1><a href="#">BigDeal</a></h1>
+      </div>
+      <!-- ################################################################################################ -->
+      <nav id="mainav" class="fl_right">
+        <ul class="clear">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a class="drop" href="#">Pages</a>
+            <ul>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Full Width</a></li>
+
+            </ul>
+          </li>
+          
+          
+        </ul>
+      </nav>
+      <!-- ################################################################################################ -->
+    </header>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+        <div id="pageintro" class="hoc clear"> 
+          <!-- ################################################################################################ -->
+          <article>
+            <h3 class="heading">Enter a product name </h3>
+            <p>Search any product name in the box below</p>
+            <footer>
+              <form class="group" action="/result" method="POST">
+                <fieldset>
+
+           
+                  <legend>Search:</legend>
+                  <input type="product" value="" id="name" name="name"placeholder="Product name here&hellip;">
+                  <button class="fas fa-sign-in-alt" type="submit" title="Submit"><em>Submit</em></button>
+                </fieldset>
+              </form>
+            </footer>
+          </article>
+          <!-- ################################################################################################ -->
+        </div>
+      </div>
+      <!-- End Top Background Image Wrapper -->
+      
+      
+      <!-- ################################################################################################ -->
+      <!-- ################################################################################################ -->
+      <!-- ################################################################################################ -->
+      {% if jumia1 and jumia2 and elec1 and elec2 %}
+    
+      <div class="wrapper row3">
+        <section class="hoc container clear"> 
+          <!-- ################################################################################################ -->
+          <div class="sectiontitle">
+            <h6 class="heading">The product with the lowest price</h6>
+          </div>
+          <div id="latest" class="group">
+            <article class="one_third first"><a class="imgover" href="https://www.jumia.ma"><img src="../static/images/demo/jumia 2.png" alt=""></a>
+              <div class="excerpt">
+                <ul class="meta">
+                  <li><i class="fas fa-user rgtspace-5"></i> <a href="#">Admin</a></li>
+                  <li><i class="fas fa-tags rgtspace-5"></i> <a href="#">Tag 1</a>, <a href="#">Tag 2</a></li>
+                </ul>
+                <p >Product name: {{jumia1}}</p>
+                <p style="color: red;">Product price: {{jumia2}}DH</p>
+              </div>
+            </article>
+            <article class="one_third"><a class="imgover" href="https://www.electroplanet.ma/"><img src="../static/images/demo/electroplanet 2.png" alt=""></a>
+              <div class="excerpt">
+                <ul class="meta">
+                  <li><i class="fas fa-user rgtspace-5"></i> <a href="#">Admin</a></li>
+                  <li><i class="fas fa-tags rgtspace-5"></i> <a href="#">Tag 1</a>, <a href="#">Tag 2</a></li>
+                </ul>
+                <p>Product name: {{elec1}}</p>
+                <p style="color: red;">Product price: {{elec2}}DH</p>
+              </div>
+            </article>
+           
+          </div>
+          <!-- ################################################################################################ -->
+        </section>
+      </div>
+      {% endif %}
+      <!-- ################################################################################################ -->
+      <!-- ################################################################################################ -->
+      <!-- ################################################################################################ -->
+    
+      <!-- ################################################################################################ -->
+      <!-- ################################################################################################ -->
+      <!-- ################################################################################################ -->
+      <!-- JAVASCRIPTS -->
+      <script src="layout/scripts/jquery.min.js"></script>
+      <script src="layout/scripts/jquery.backtotop.js"></script>
+      <script src="layout/scripts/jquery.mobilemenu.js"></script>
+      </body>
+      </html>
+
+ 
